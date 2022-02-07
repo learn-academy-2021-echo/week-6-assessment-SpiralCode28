@@ -1,6 +1,7 @@
 # Assessment for Week 6
 
 Read all instructions carefully!
+
 - Step by step instructions are available [here](https://github.com/LEARNAcademy/Syllabus/blob/main/github/assessments.md)
 - Assessment should be accessed through GitHub Classroom
 - Clone the assessment to your local machine
@@ -10,6 +11,7 @@ Read all instructions carefully!
 - Assessments are due before class starts on the **Monday of Week 8**
 
 ---
+
 - An instructor will review your Pull Request and give you feedback
 - Incomplete assessments will not be reviewed
 - Once your assessment is reviewed, merge and delete your branch
