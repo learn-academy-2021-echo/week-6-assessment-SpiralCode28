@@ -10,6 +10,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer:
 
+- This problem is fixable. The foreign key can be included by running command $rails generate migration model_id. The "model" is the name of the model you are adding the column to and add the datatype, integer. The foreign key always goes on "belongs_to".
+
 Researched answer:
 
 - A developer can update a database to include a foreign key by first creating a migration. The migration should reference the change that is being made (editing a column, updating a column, etc), and then add the code required to perform the change in the migration file. After the migration file has been updating to include the correct code, the user inputs rails db:migrate into the console to update the schema. The foreign key would be named cohort_id. The foreign key would be located on the Student model as a student can have only one cohort, but the Cohort model will have many students.
@@ -18,7 +20,7 @@ Researched answer:
 
 Your answer:
 
--
+- The RESTful routes which must be passed params are show, update, and destroy.
 
 Researched answer:
 
@@ -26,7 +28,12 @@ Researched answer:
 
 3. Name three rails generator commands. What is created by each?
 
-Your answer: rails generate db:migrate, rails generate resource, and rails generate
+Your answer:
+
+- Three rails generator commands are
+  - rails generate db:migrate, which allows you to make changes to your tables
+  - rails generate model, that can find, add, and remove data from database records
+  - rails generate controller, is responsible for routing outside requests to internal actions
 
 Researched answer:
 
@@ -38,33 +45,33 @@ Researched answer:
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
-action: "GET" route: /students
+- action: "GET" route: /students
 
-- def index -- returns all the enteries in the students table
+  Index = will usually give you back a complete list of everything in the table.
 
-action: "POST" route: /students
+- action: "POST" route: /students
 
-- def create -- create a new instance in the the BD tablr students
+  Create = if you are posting somethings it means that you are adding something that is not their.
 
-action: "GET" route: /students/new
+- action: "GET" route: /students/new
 
-- def new -- return a form that we will use to create a student
+  New = if you are creating a new instance of this "student" then you will need to use the new controller method.
 
-action: "GET" route: /students/2
+- action: "GET" route: /students/2
 
--
+  Show = it seems that you are getting student with ide of 2. You want to show that specific student.
 
-action: "GET" route: /students/2/edit
+- action: "GET" route: /students/2/edit
 
-- def edit -- edit
+  Edit = if you wanted to get and edit done you would need the edit controller method
 
-action: "PATCH" route: /students/2
+- action: "PATCH" route: /students/2
 
-- def update -- update the instance of the student table where id = 2
+  Update = both patch and put will need the update controller method if you are "updating" a particular student.
 
-action: "DELETE" route: /students/2
+- action: "DELETE" route: /students/2
 
-- def destroy -- deleting the instance of the student table where id = 2
+  Destroy = is the method used to delete a particular student.
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
